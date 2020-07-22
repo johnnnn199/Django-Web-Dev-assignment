@@ -1,0 +1,111 @@
+{% extends 'my_portfolio_website_app/base.html' %}
+{% load static %}
+
+{% block stylesheets %}
+<style>
+    .img-container img {
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .img-container {
+        margin-top: 2rem;
+    }
+
+    .personal {
+        padding: 3rem;
+    }
+
+    .detail {
+        padding: 3rem;
+    }
+
+    .detail i {
+        margin-right: 1rem;
+        color: #15aabf;
+    }
+
+    b {
+        padding-right: 10px;
+    }
+
+    .card {
+        margin-top: 6rem;
+
+    }
+
+    ul {
+        position: relative;
+        right: 0;
+    }
+
+    .useful_link a {
+        color: #ccc;
+        margin: 1rem;
+    }
+
+    .useful_link a:hover {
+        color: #000;
+    }
+
+    .profile_name h1,
+    h5 {
+        margin: 1rem;
+    }
+</style>
+{% endblock stylesheets %}
+
+
+{% block headscript %}
+{% endblock headscript %}
+
+
+{% block content %}
+
+
+<div class="container">
+    <div class="col-sm-12">
+        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="row ">
+                <div class="img-container mx-auto">
+                    <img src='img/johnu.jpg'
+                        style="width: 40%;" class="d-block mx-auto">
+                </div>
+
+            </div>
+            <div class="row align-self-center">
+                <div class="profile_name text-center">
+                    <h1>EMMANUEL PARACKAL</h1>
+                    <div class="useful_link ml-auto">
+                        <div class="mx-auto">
+                            <a href="#"><span class="fab fa-github fa-2x text-dark"></span></a>
+                            <a href="https://www.linkedin.com/in/john-emmanuel-49623a193/"><span
+                                    class="fab fa-linkedin fa-2x text-dark"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 personal">
+                        <h3 style="font-weight: bold">Personal Detail</h3>
+                        <p>I regard myself to be a very open minded person, ready for new challenge, especially when it comes to technology. People consider me to be a social,
+                            temperamental person who doesn't hesitate in giving my opinion for what I think and believe in, honest and respectfully.</p>
+                    </div>
+                    <div class="col-md-6 detail">
+                        <p><i class="far fa-user-circle"></i><b>Name:</b> EMMANUEL PARACKAL </p>
+                        <p><i class="fas fa-phone"></i><b>Phone:</b> 99192126840</p>
+                        <p><i class="fas fa-envelope"></i><b>Email:</b> Josephparackal@student.sfit.ac.in</p>
+                        <p><i class="far fa-calendar-alt"></i><b>Date Of Birth:</b> 11-08-2000</p>
+                        <p><i class="fas fa-map-marker-alt"></i><b>Address:</b> Borivali West , Raj tower</p>
+                        <p><i class="fas fa-code"></i><b>Language:</b> Python, HTML ,CSS </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
